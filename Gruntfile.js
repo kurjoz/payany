@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         src: 'src',
         dist: 'dist',
-        repo: '',
+        repo: 'git@github.com:kurjoz/payany.git',
         pkg: grunt.file.readJSON('package.json'),
         less:{
             options: {
