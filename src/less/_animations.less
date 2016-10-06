@@ -53,31 +53,22 @@
 .section{
     .text-icon-step,
     .text-icon__top,
-    .fact,
-    .feedback-item,
-    .obj, .obj.obj-clip, .obj.obj-clips,
-    .obj + .obj + .obj + .obj + .obj{
+    .fact{
         transition: all 350ms linear;
         transition-delay: 300ms;
         //transform: translate3d(0px, 400px, 0px);
         opacity: 0;
     }
     .text-icon-step + .text-icon-step,
-    .text-icon__top + .text-icon__top,
-    .fact + .fact,
-    .obj + .obj{
+    .fact + .fact{
         transition-delay: 600ms;
     }
     .text-icon-step + .text-icon-step + .text-icon-step,
-    .text-icon__top + .text-icon__top + .text-icon__top,
-    .fact + .fact + .fact,
-    .obj + .obj + .obj{
+    .fact + .fact + .fact{
         transition-delay: 900ms;
     }
     .text-icon-step + .text-icon-step + .text-icon-step + .text-icon-step,
-    .text-icon__top + .text-icon__top + .text-icon__top + .text-icon__top,
-    .fact + .fact + .fact + .fact,
-    .obj + .obj + .obj + .obj{
+    .fact + .fact + .fact + .fact{
         transition-delay: 1200ms;
     }
 }
@@ -89,10 +80,7 @@
 .section.in-view{
     .text-icon-step,
     .text-icon__top,
-    .fact,
-    .feedback-item,
-    .obj,
-    .obj + .obj + .obj + .obj + .obj{
+    .fact{
         //transform: translate3d(0px, 0px, 0px);
         opacity: 1;
     }
