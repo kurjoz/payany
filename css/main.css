@@ -58,6 +58,14 @@ i.brand {
     font-size: 26px;
   }
 }
+@media (max-width: 540px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+}
 .btn {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -778,13 +786,9 @@ i.brand {
     font-weight: 300;
   }
 }
-@media (max-width: 440px) {
-  .text-icon-step .text-icon-step__step {
-    width: 40px;
-  }
-  .text-icon-step .text-icon-step__icon {
-    margin: 0 20px 0 0;
-    width: 65px;
+@media (max-width: 540px) {
+  .text-icon-step .text-icon__text {
+    font-size: 18px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -884,6 +888,7 @@ i.brand {
 }
 @media (max-width: 991px) {
   .feedback-item {
+    padding: 15px;
     margin: 0 20px;
     font-size: 18px;
     font-weight: 300;
