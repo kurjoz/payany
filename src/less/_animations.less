@@ -1,0 +1,99 @@
+
+
+
+.in-view{}
+.section{
+    overflow: hidden;
+}
+// General animation for regular content elements
+.section{
+    //h2,
+    .elements-set-0{
+        transition: all 450ms linear;
+        //transform: translate3d(0px, 400px, 0px);
+        opacity: 0;
+    }
+    .elements-set-0{
+        transition-delay: 300ms;
+    }
+}
+.section.in-view{
+    //h2,
+    .elements-set-0{
+        //transform: translate3d(0px, 0px, 0px);
+        opacity: 1;
+    }
+}
+
+//Top Slide animation:
+.section{
+    .elements-set-top,
+    &.section_hasbg:before{
+        transition: all 350ms linear;
+        //transform: translate3d(0px, 400px, 0px);
+        opacity: 0;
+    }
+    &.section_hasbg:before{
+        transform: translate3d(0px, 400px, 0px);
+    }
+    &.section_hasbg:before{
+        transition-delay: 300ms;
+    }
+}
+.section.in-view{
+    .elements-set-top,
+    &.section_hasbg:before{
+        transform: translate3d(0px, 0px, 0px);
+        opacity: 1;
+    }
+}
+
+
+// Animations for steps section
+.section{
+    .text-icon-step,
+    .text-icon__top,
+    .fact,
+    .feedback-item,
+    .obj, .obj.obj-clip, .obj.obj-clips,
+    .obj + .obj + .obj + .obj + .obj{
+        transition: all 350ms linear;
+        transition-delay: 300ms;
+        //transform: translate3d(0px, 400px, 0px);
+        opacity: 0;
+    }
+    .text-icon-step + .text-icon-step,
+    .text-icon__top + .text-icon__top,
+    .fact + .fact,
+    .obj + .obj{
+        transition-delay: 600ms;
+    }
+    .text-icon-step + .text-icon-step + .text-icon-step,
+    .text-icon__top + .text-icon__top + .text-icon__top,
+    .fact + .fact + .fact,
+    .obj + .obj + .obj{
+        transition-delay: 900ms;
+    }
+    .text-icon-step + .text-icon-step + .text-icon-step + .text-icon-step,
+    .text-icon__top + .text-icon__top + .text-icon__top + .text-icon__top,
+    .fact + .fact + .fact + .fact,
+    .obj + .obj + .obj + .obj{
+        transition-delay: 1200ms;
+    }
+}
+//Animation for objects
+.section .obj{
+
+}
+
+.section.in-view{
+    .text-icon-step,
+    .text-icon__top,
+    .fact,
+    .feedback-item,
+    .obj,
+    .obj + .obj + .obj + .obj + .obj{
+        //transform: translate3d(0px, 0px, 0px);
+        opacity: 1;
+    }
+}
