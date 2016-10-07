@@ -274,7 +274,20 @@ i.brand {
   background-color: #636364;
   border-color: #636364;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
+  .carousel-control,
+  .carousel-control.right,
+  .carousel-control.left {
+    width: 30px;
+  }
+  .carousel-control.right {
+    right: -10px;
+  }
+  .carousel-control.left {
+    left: -10px;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
   .carousel-control,
   .carousel-control.right,
   .carousel-control.left {
@@ -886,7 +899,17 @@ i.brand {
 .feedback-item__author-name {
   padding: 19px 0 0;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
+  .feedback-item {
+    padding: 15px 15px 80px;
+    font-size: 16px;
+  }
+  .feedback-item__author {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
   .feedback-item {
     padding: 15px;
     margin: 0 20px;
