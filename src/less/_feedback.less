@@ -28,7 +28,17 @@
 .feedback-item__author-name{
     padding: 19px 0 0;
 }
-@media (max-width: @screen-sm-max){
+@media (max-width: @screen-xs-max){
+    .feedback-item{
+        padding: 15px 15px 80px;
+        font-size: 16px;
+    }
+    .feedback-item__author{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: @screen-xs-max) and (max-width: @screen-sm-max){
     .feedback-item{
         padding: 15px;
         margin: 0 20px;

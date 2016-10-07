@@ -36,8 +36,20 @@
     background-color: #636364;
     border-color: #636364
 }
-@media (max-width: @screen-sm-max){
+@media (max-width: @screen-xs-max){
+    .carousel-control, .carousel-control.right, .carousel-control.left{
+        width: 30px;
+    }
+    .carousel-control.right{
+        right: -10px;
+    }
+    .carousel-control.left{
+        left: -10px;
+    }
+}
+@media (min-width: @screen-xs-max) and (max-width: @screen-sm-max){
     .carousel-control, .carousel-control.right, .carousel-control.left{
         width: 60px;
+
     }
 }
